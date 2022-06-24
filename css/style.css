@@ -1,0 +1,242 @@
+body {
+     margin:         auto;
+     background-color: #eee;
+     font-size:      12pt;
+	   padding-left:   5pt;
+}
+
+h1   {
+     font-size:      24pt;
+     font-style:     normal;
+     margin-top:     15px;
+}
+
+h2   {
+     font-size:      17pt;
+     font-style:     normal;
+     /* border-bottom: solid 1px #A9A9A9; */
+     color: Brown;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-container {
+     max-width: 100%;
+     background: white;
+     padding: 10px;
+     /* box-shadow: 0 0 5px rgba(107, 110, 112, 0.4); */
+}
+
+.content-container {
+     box-sizing: border-box;
+     max-width: 900px;
+     width: 100%;
+     margin: 0 auto;
+     margin-bottom: 20px;
+     padding: 10px;
+     overflow: hidden;
+     /* box-shadow: 0 0 5px rgba(107, 110, 112, 0.4); */
+}
+
+.hflex-container{
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    /* justify-content: center; */
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+    /* align-items: stretch | flex-start | flex-end | center | baseline; */
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/*  Profile styles
+--------------------------------------*/
+
+#profile {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#profile img{
+    width: 155;
+    max-height: 300px;
+    margin: 8 20 20 20;
+    object-fit: contain;
+}
+
+/*  Education and Experience styles
+--------------------------------------*/
+.imginfo {
+   max-width: 36%;
+   max-height: 160px;
+   display: flex;
+   margin: 0 10px 0 10px;
+   align-items: center;
+}
+
+.imginfo img {
+      width: 36%;
+      margin-right: 20px;
+      object-fit: contain;
+}
+
+.imginfo p {
+    font-size: 14px;
+}
+
+.edu img{
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.edu p {
+  display: inline-block;
+}
+
+.experience table, td {
+  vertical-align: top;
+  padding: 3px 5px 3px 5px;
+}
+
+/*  Paper styles
+    FontAwesome reference: http://astronautweb.co/snippet/font-awesome/
+--------------------------------------*/
+#paper {
+    border-bottom: solid 1px #EEE;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* max-height: 150px; */
+    min-height: 100px;
+    align-items: center;
+}
+
+#paper img {
+    width: 200px;
+    max-height: 120px;
+    margin: 8px;
+    object-fit: contain;
+}
+
+#paper div {
+  margin: 10px;
+}
+
+#paper .title {
+    padding: 1px;
+    margin: 1px;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+#paper .authors {
+    padding: 1px;
+    margin: 1px;
+    /* color: #1F618D; */
+    font-style: italic;
+}
+
+#paper .author_me {
+    color: #943126;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#paper .venue {
+    display: inline-block;
+    /* color: #500; */
+    margin: 2px;
+    margin-right: 10px;
+}
+
+#paper .pdflink::before{
+  font-family: FontAwesome;
+  color: black;
+  margin: 5 5 5 2;
+  content: "\f1c1";
+}
+
+#paper .codelink::before{
+  font-family: FontAwesome;
+  color: black;
+  margin: 5 5 5 5;
+  content: "\f09b";
+}
+
+#paper .pptlink::before{
+  font-family: FontAwesome;
+  color: black;
+  margin: 5 5 5 5;
+  content: "\f1c4"
+}
+
+#paper .prjlink::before{
+  font-family: FontAwesome;
+  color: black;
+  margin: 5 5 5 5;
+  content: "\f085"
+}
+
+#paper .coming{
+  font-family: FontAwesome;
+  font-style: italic;
+  color: gray;
+  margin: 5 5 5 5;
+}
+
+#paper .eccv::before {
+  content: "European Conference on Computer Vision (ECCV), "
+}
+
+
+#paper .iccv::before {
+  content: "International Conference on Computer Vision (ICCV), "
+}
+
+#paper .cvpr::before {
+  content: "Computer Vision and Pattern Recognition (CVPR), "
+}
+
+#paper .aaai::before {
+  content: "AAAI Conference on Artificial Intelligence (AAAI), "
+}
+
+#paper .accv::before {
+  content: "Asia Conference on Computer Vision (ACCV), "
+}
+
+#paper .bmvc::before {
+  content: "British Machine Vision Conference (BMVC), "
+}
+
+#paper .wacv::before {
+  content: "IEEE Winter Conference on Applications of Computer Vision (WACV), "
+}
+
+#paper .arxiv::before {
+  content: "Arxiv Tech Report, "
+}
+
+#paper .tip::before{
+  content: "IEEE Transactions on Image Processing (TIP), "
+}
